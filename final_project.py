@@ -1,7 +1,8 @@
 import pandas as pd
 
 #Reading data
-dfA = pd.read_csv("Electricity_20-09-2024.csv", delimiter=";", decimal = ",")
+url1="https://raw.githubusercontent.com/vkovalai/Final_Project_/refs/heads/main/Electricity_20-09-2024.csv"
+dfA = pd.read_csv(url1, delimiter=";", decimal = ",")
 dfB = pd.read_csv("sahkon-hinta-010121-240924.csv")
 
 # Change time format to datetime
